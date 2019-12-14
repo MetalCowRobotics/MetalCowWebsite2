@@ -40,7 +40,7 @@ $studentInteresting = filter_var($_POST["studentInteresting"], FILTER_SANITIZE_S
 date_default_timezone_set('America/Chicago');
 
 //build the application message from the webform contents
-$message = "MetalCow,<br>
+$html_message = "MetalCow,<br>
 <br>
 The following information has been submitted via the website.<br>
 Please review and follow up with the student.<br>
@@ -87,7 +87,7 @@ $email = "teammetalcow@gmail.com";
 $from = new SendGrid\Email($name, $email);
 $subject = "MetalCow Pre-Enrollment: ".$studentFname." ".$studentLname;
 $to = new SendGrid\Email("MetalCow Robotics", getenv('TEAM_EMAIL'));
-$content = new SendGrid\Content("text/html", $message);
+$content = new SendGrid\Content("text/html", $html_message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //Send email to teammetalcow@gmail.com with the application
@@ -97,7 +97,91 @@ $response = $sg->client->mail()->send()->post($mail);
 //echo $response->statusCode();
 //echo $response->headers();
 //echo $response->body();
-//echo $message;
+//echo $html_message;
+
+/**************************
+Use CURL to lazily post this to Slack and get mentors talking
+******************/
+//slack needs it as markdown for formatting
+$markdown_message = "
+### Student Contact Info\n
+*Name:* ".$studentFname." ".$studentLname."\n
+*Email:* ".$studentEmail."\n
+*Phone:* ".$studentPhone."\n
+
+### Parent Contact Info\n
+*Name:* ".$parentFname." ".$parentLname."\n
+*Email:* ".$parentEmail."\n
+*Phone:* ".$parentPhone."\n
+
+### Student Academics\n
+*School:* ".$studentSchool."\n
+*Grade:* ".$studentGrade."\n
+*How did student find out about MetalCow Robotics:* ".$studentReference."\n
+\n
+<b>Robotics Experience:*\n
+".$studentRobotics."\n
+\n
+*Other Commitments:*\n
+".$studentCommitments."\n
+
+### Student Team Related Info\n
+*Student is interested in a role on:</b> ".$studentRole."\n
+*Student's Skills:*\n
+".$studentSkills."\n
+\n
+*Student's Expectations:</b>\n
+".$studentExpectations."\n
+\n
+*Something the student finds interesting about themself:</b>\n
+".$studentInteresting."\n
+\n
+\n
+_www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."_";
+
+$curl_payload = ""
+  ."{"
+  ."\"blocks\": ["
+  ."  { "
+  ."    \"type\": \"section\","
+  ."    \"text\": {"
+  ."      \"type\": \"mrkdwn\","
+  ."      \"text\": \"@here We've had a new ".$studentGrade." student, *".$studentFname." ".$studentLname."* apply. "
+  ." \n What time and day are people available to meet with them? "
+  ." \n _:warning: (One of you will need to send the email, I can't do that yet)_\""
+  ."    }"
+  ."  },"
+  ."  {"
+  ."    \"type\": \"section\","
+  ."    \"text\": {"
+  ."      \"type\": \"mrkdwn\","
+  ."      \"text\": \"".$markdown_message."\""
+  ."    }"
+  ."  }"
+  ."]"
+  ."}"
+
+  /**************************
+  Make CURL post
+  ******************/
+  $data = array("name" => "Hagrid", "age" => "36");
+  $data_string = json_encode($data);
+
+  $ch = curl_init('http://api.local/rest/users');
+  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+      'Content-Type: application/json',
+      'Content-Length: ' . strlen($data_string))
+  );
+
+  $result = curl_exec($ch);
+
+
+
+
+
 
 
 /**************************
