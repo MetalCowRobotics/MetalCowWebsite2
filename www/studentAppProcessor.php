@@ -105,39 +105,39 @@ Use CURL to lazily post this to Slack and get mentors talking
 ******************/
 //slack needs it as markdown for formatting
 $markdown_message = "
-### Student Contact Info\n
-*Name:* ".$studentFname." ".$studentLname."\n
-*Email:* ".$studentEmail."\n
-*Phone:* ".$studentPhone."\n
+### Student Contact Info
+*Name:* ".$studentFname." ".$studentLname."
+*Email:* ".$studentEmail."
+*Phone:* ".$studentPhone."
 
-### Parent Contact Info\n
-*Name:* ".$parentFname." ".$parentLname."\n
-*Email:* ".$parentEmail."\n
-*Phone:* ".$parentPhone."\n
+### Parent Contact Info
+*Name:* ".$parentFname." ".$parentLname."
+*Email:* ".$parentEmail."
+*Phone:* ".$parentPhone."
 
-### Student Academics\n
-*School:* ".$studentSchool."\n
-*Grade:* ".$studentGrade."\n
-*How did student find out about MetalCow Robotics:* ".$studentReference."\n
-\n
-<b>Robotics Experience:*\n
-".$studentRobotics."\n
-\n
-*Other Commitments:*\n
-".$studentCommitments."\n
+### Student Academics
+*School:* ".$studentSchool."
+*Grade:* ".$studentGrade."
+*How did student find out about MetalCow Robotics:* ".$studentReference."
 
-### Student Team Related Info\n
-*Student is interested in a role on:</b> ".$studentRole."\n
-*Student's Skills:*\n
-".$studentSkills."\n
-\n
-*Student's Expectations:</b>\n
-".$studentExpectations."\n
-\n
-*Something the student finds interesting about themself:</b>\n
-".$studentInteresting."\n
-\n
-\n
+*Robotics Experience:*
+".$studentRobotics."
+
+*Other Commitments:*
+".$studentCommitments."
+
+### Student Team Related Info
+*Student is interested in a role on:</b> ".$studentRole."
+*Student's Skills:*
+".$studentSkills."
+
+*Student's Expectations:</b>
+".$studentExpectations."
+
+*Something the student finds interesting about themself:</b>
+".$studentInteresting."
+
+
 _www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."_";
 
 $curl_payload = ""
@@ -147,7 +147,7 @@ $curl_payload = ""
   ."    \"type\": \"section\","
   ."    \"text\": {"
   ."      \"type\": \"mrkdwn\","
-  ."      \"text\": \"@here We've had a new ".$studentGrade." student, *".$studentFname." ".$studentLname."* apply. "
+  ."      \"text\": \"@here We've had a new grade ".$studentGrade." student, *".$studentFname." ".$studentLname."* apply. "
   ." \n What time and day are people available to meet with them? "
   ." \n _:warning: (One of you will need to send the email, I can't do that yet)_\""
   ."    }"
