@@ -80,7 +80,7 @@ Please review and follow up with the student.<br>
 <br>
 <i>www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."</i>";
 
-
+/*
 //make a connection to google to get gmail to send email for us
 $name = "MetalCow Robotics";
 $email = "teammetalcow@gmail.com";
@@ -98,6 +98,7 @@ $response = $sg->client->mail()->send()->post($mail);
 //echo $response->headers();
 //echo $response->body();
 //echo $html_message;
+*/
 
 /**************************
 Use CURL to lazily post this to Slack and get mentors talking
