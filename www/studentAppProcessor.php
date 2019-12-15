@@ -80,7 +80,6 @@ Please review and follow up with the student.<br>
 <br>
 <i>www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."</i>";
 
-/*
 //make a connection to google to get gmail to send email for us
 $name = "MetalCow Robotics";
 $email = "teammetalcow@gmail.com";
@@ -98,7 +97,6 @@ $response = $sg->client->mail()->send()->post($mail);
 //echo $response->headers();
 //echo $response->body();
 //echo $html_message;
-*/
 
 /**************************
 Use CURL to lazily post this to Slack and get mentors talking
@@ -147,8 +145,7 @@ $curl_payload = ""
   ."    \"text\": {"
   ."      \"type\": \"mrkdwn\","
   ."      \"text\": \"A new grade ".$studentGrade." student, *".$studentFname." ".$studentLname."* has applied. "
-  ." \n Who will be taking point on this one? "
-  ." \n What time and day are people available to meet? "
+  ." \n Who will be taking point on this one? What time and day are people available to meet? "
   ." \n _:warning: (One of you will need to send the email, I can't do that yet)_\""
   ."    }"
   ."  },"
