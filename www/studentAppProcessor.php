@@ -146,8 +146,9 @@ $curl_payload = ""
   ."    \"type\": \"section\","
   ."    \"text\": {"
   ."      \"type\": \"mrkdwn\","
-  ."      \"text\": \"@here We've had a new grade ".$studentGrade." student, *".$studentFname." ".$studentLname."* apply. "
-  ." \n What time and day are people available to meet with them? "
+  ."      \"text\": \"A new grade ".$studentGrade." student, *".$studentFname." ".$studentLname."* has applied. "
+  ." \n Who will be taking point on this one? "
+  ." \n What time and day are people available to meet? "
   ." \n _:warning: (One of you will need to send the email, I can't do that yet)_\""
   ."    }"
   ."  },"
@@ -162,7 +163,10 @@ $curl_payload = ""
   ."}";
 
   /**************************
-  Make CURL post
+  Make CURL post to Slack
+  This is super basic... we can build on it
+  later but this is a start and gets base
+  connections going.
   ******************/
   $postUrl = getenv('SLACKBOT_POST_KEY');
   $ch = curl_init($postUrl);
