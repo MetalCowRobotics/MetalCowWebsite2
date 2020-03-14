@@ -123,40 +123,40 @@ if($responseKeys["success"]) {
       Use CURL to lazily post this to Slack and get mentors talking
       ******************/
       //slack needs it as markdown for formatting
-      $markdownMessage = "
-      >*Student Contact Info*
-      >Name: ".$studentFname." ".$studentLname."
-      >Email: ".$studentEmail."
-      >Phone: ".$studentPhone."
-      >
-      >*Parent Contact Info*
-      >Name: ".$parentFname." ".$parentLname."
-      >Email: ".$parentEmail."
-      >Phone: ".$parentPhone."
-      >
-      >*Student Academics*
-      >School: ".$studentSchool."
-      >Grade: ".$studentGrade."
-      >How did student find out about MetalCow Robotics: ".$studentReference."
-      >
-      >*Robotics Experience:*
-      >".$studentRobotics."
-      >
-      >*Other Commitments:*
-      >".$studentCommitments."
-      >
-      >*Student Team Related Info*
-      >Student is interested in a role on: ".$studentRole."
-      >Student's Skills:
-      >".$studentSkills."
-      >
-      >*Student's Expectations:*
-      >".$studentExpectations."
-      >
-      >*Something the student finds interesting about themself:*
-      >".$studentInteresting."
-      >
-      >_www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."_";
+$markdownMessage = "
+>*Student Contact Info*
+>Name: ".$studentFname." ".$studentLname."
+>Email: ".$studentEmail."
+>Phone: ".$studentPhone."
+>
+>*Parent Contact Info*
+>Name: ".$parentFname." ".$parentLname."
+>Email: ".$parentEmail."
+>Phone: ".$parentPhone."
+>
+>*Student Academics*
+>School: ".$studentSchool."
+>Grade: ".$studentGrade."
+>How did student find out about MetalCow Robotics: ".$studentReference."
+>
+>*Robotics Experience:*
+>".$studentRobotics."
+>
+>*Other Commitments:*
+>".$studentCommitments."
+>
+>*Student Team Related Info*
+>Student is interested in a role on: ".$studentRole."
+>Student's Skills:
+>".$studentSkills."
+>
+>*Student's Expectations:*
+>".$studentExpectations."
+>
+>*Something the student finds interesting about themself:*
+>".$studentInteresting."
+>
+>_www.MetalCowRobotics.com/join | ".date('m/d/Y h:i:s a', time())."_";
 
       $curl_payload = ""
         ."{"
