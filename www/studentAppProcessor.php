@@ -104,7 +104,7 @@ if($responseKeys["success"]) {
       //make a connection to google to get gmail to send email for us
       $name = "MetalCow Robotics";
       $email = "teammetalcow@gmail.com";
-      $from = new SendGrid\Email($name, $email);
+      $from = new SendGrid\Email($studentFname." ".$studentLname, $studentEmail);
       $subject = "MetalCow Pre-Enrollment: ".$studentFname." ".$studentLname;
       $to = new SendGrid\Email("MetalCow Robotics", getenv('TEAM_EMAIL'));
       $content = new SendGrid\Content("text/html", $htmlMessage);
