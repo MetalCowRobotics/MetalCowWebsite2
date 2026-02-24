@@ -1,66 +1,152 @@
-# Updating the MetalCow MetalCow
+# MetalCow Robotics Website
 
-## Step 1: Intall virtualbox
-https://www.virtualbox.org/wiki/Downloads
+The official website for MetalCow Robotics (FRC Team 3940). Includes the main team website and a scouting application for FRC competitions.
 
-## Step 2: Install Vagrant
-https://www.vagrantup.com/
+## Tech Stack
 
-## Step 3: Install Git and GitHub Desktop
-https://desktop.github.com/
+- **Main Website**: Static HTML, CSS, JavaScript, PHP
+- **Scouting App**: Next.js 16, React 19, Tailwind CSS 4, Supabase
+- **Server**: Node.js proxy server (routes requests between static site and Next.js app)
+- **Email**: PHP with SendGrid
 
-## Download the MetalCow Website
-Go to: https://github.com/MetalCowRobotics/MetalCowWebsite
-then choose "Clone or Download" and pick "Desktop" to clone the MetalCowWebsite with GitHub Desktop.
+## Prerequisites
 
-## Step 4: Setup a ScotchBox Image
-https://box.scotch.io/docs/
+- Node.js 18+
+- npm
+- PHP 7.4+ (for local email processing)
+- Composer (for PHP dependencies)
 
-You'll need to clone scotchbox down and then setup this as the Vagrantfile
-```
-config.vm.box = "scotch/box"
-config.vm.network "private_network", ip: "192.168.33.10"
-config.vm.hostname = "scotchbox"
-config.vm.synced_folder "C:\\Users\\cowUser\\Documents\\GitHub\\MetalCowWebsite\\www", "/var/www/public", create: true
-```
-The following are the key steps....
+## Getting Started
 
-### Configure the IP address.
-In your `Vagrantfile` look for the line similar to this and make sure it matches the following
-```
-config.vm.network "private_network", ip: "192.168.33.10"
-```
+### 1. Install Dependencies
 
-Open a Command Prompt and `cd` to the folder where you downloaded ScotchBox.  In that folder run the `vagrant up` command. *This may take a few minutes be patient, remember it is downloading, configuring, installing software, and booting a whole new computer*
+```bash
+# Install Node.js dependencies for main project
+npm install
 
-Once `vagrant up` is complete you will have a server running on your computer.  You should be able to visit `192.168.33.10` in Chrome. The "Welcome to ScotchBox" default site should show.  Feel free to look at all of what is available to you on ScotchBox!
+# Install Node.js dependencies for scouting app
+cd www/scout && npm install && cd ../..
 
-Now run `vagrant destroy` to shut it down.
-
-### Configure the project folder
-Before you can see the MetalCow website you will have to link the site on your local machine - the host - to the ScotchBox server.  To do that open your Vagrantfile again and look for the following line
-```
-config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+# Install PHP dependencies
+composer install
 ```
 
-change it to
+### 2. Environment Variables
+
+Create a `.env.local` file in the root:
+
 ```
-config.vm.synced_folder "[PATH-TO-PROJECT-ON-YOUR-COMPUTER]/MetalCowWebsite/www", "/var/www/public", create: true
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Go back to the folder where you installed ScotchBox and restart the server with the `vagrant up` command.
+For the scouting app, also create `.env.local` in `www/scout/`:
 
-Visit `192.168.33.10` and confirm that the MetalCow Website loads.
-All the pages should work, except submitting the application form, since the mailserver is not connected.
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-## Step 5: Install Atom.io
-https://atom.io/
+### 3. Run Development Server
 
-## Step 6: Open the MetalCowWebsite project in Atom
-Open Atom.io and File>Add Project Folder>Choose the MetalCowWebsite folder and click "Open"
+Start both the Next.js scouting app and the proxy server:
 
-Make a branch for your work in GitHub Desktop
-Make the changes you wanted
-Submit an pull requests you want.
+```bash
+# Terminal 1: Start the scouting app on port 3001
+cd www/scout && npm run dev
 
-Do not do work on the `production` branch, this one is the one tied to the live website and only Code Leads can push to that branch.
+# Terminal 2: Start the proxy server on port 3000
+node proxy.js
+```
+
+- Main website: http://localhost:3000
+- Scouting app: http://localhost:3000/scout/
+
+### 4. Build for Production
+
+```bash
+# Build the scouting app
+cd www/scout && npm run build
+
+# Start production server
+node proxy.js
+```
+
+## Project Structure
+
+```
+.
+├── proxy.js                 # Node.js proxy server
+├── package.json             # Root package.json (not used directly)
+├── composer.json            # PHP dependencies
+├── www/                     # Main website files
+│   ├── index.html          # Home page
+│   ├── apply.html          # Application page
+│   ├── join.html           # Join team page
+│   ├── mentor.html         # Mentor page
+│   ├── sponsor.html        # Sponsorship page
+│   ├── css/                # Stylesheets
+│   ├── js/                 # JavaScript files
+│   ├── fonts/              # Font files
+│   ├── images/             # Image assets
+│   ├── less/               # Less CSS files
+│   ├── mailProcessor-*.php # Email processors
+│   └── scout/              # Next.js scouting app
+│       ├── app/            # App router pages
+│       ├── components/    # React components
+│       ├── public/        # Static assets
+│       └── package.json   # Scouting app dependencies
+├── components.json         # shadcn/ui config
+├── next.config.ts          # Next.js config
+└── tsconfig.json           # TypeScript config
+```
+
+## Scouting App Routes
+
+The scouting app is mounted at `/scout/` and includes:
+
+- `/scout/` - Home
+- `/scout/match` - Match scouting
+- `/scout/pit` - Pit scouting
+- `/scout/teams` - Team list
+- `/scout/analytics` - Data analytics
+- `/scout/admin` - Admin panel
+- `/scout/login` - User login
+
+## Linting
+
+```bash
+# Lint main project
+npm run lint
+
+# Lint scouting app
+cd www/scout && npm run lint
+```
+
+## Deployment
+
+### Static Files (Main Website)
+
+Upload the contents of `www/` to your web server (Apache/Nginx):
+
+- Ensure PHP is configured
+- Set up SendGrid API key for email forms
+
+### Scouting App
+
+Build the Next.js app and serve via the proxy:
+
+```bash
+cd www/scout && npm run build
+```
+
+The built output is in `www/scout/out/` (static export).
+
+## Contributing
+
+1. Create a feature branch: `git checkout -b feature-name`
+2. Make your changes
+3. Test locally
+4. Push and create a pull request
+
+**Important**: Do not push directly to `main` branch. Only Code Leads can push to main.
