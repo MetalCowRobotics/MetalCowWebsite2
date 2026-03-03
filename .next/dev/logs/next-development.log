@@ -1,0 +1,270 @@
+[00:00:01.066] Server  LOG     ✓ Ready in 829ms
+[00:00:05.341] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T00:21:19.222Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:00:05.341] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:19:47.631] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:33:08.285] Server  WARN    ⚠ Cross origin request detected from 192.168.0.112 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:33:08.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:09.261] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T00:54:23.196Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:33:10.018] Browser ERROR   {"__isAuthError":true,"code":"refresh_token_not_found","name":"AuthApiError","status":400}
+[00:33:10.018] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:12.058] Browser WARN    No TBA status/oprs for this event
+[00:34:04.580] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:04.795] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T00:55:18.722Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:34:05.509] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:21.279] Browser WARN    No TBA status/oprs for this event
+[00:34:21.332] Browser WARN    No TBA status/oprs for this event
+[00:38:35.364] Browser ERROR   Error submitting pit data: {"code":"23505","details":null,"hint":null,"message":"duplicate key value violates unique constraint \"pit_scouting_team_event_key_unique\""}
+[00:38:35.364] Browser ERROR   Error submitting pit data: {"code":"23505","details":null,"hint":null,"message":"duplicate key value violates unique constraint \"pit_scouting_team_event_key_unique\""}
+[00:38:35.364] Browser ERROR   Error submitting pit data: {"code":"23505","details":null,"hint":null,"message":"duplicate key value violates unique constraint \"pit_scouting_team_event_key_unique\""}
+[00:39:05.138] Browser ERROR   Error submitting pit data: {"code":"23505","details":null,"hint":null,"message":"duplicate key value violates unique constraint \"pit_scouting_team_event_key_unique\""}
+[00:39:47.406] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:01:01.368Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:39:53.831] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:01:07.794Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:47:49.665] Server  LOG     ✓ Compiled in 54ms
+[00:48:11.893] Server  LOG     ✓ Compiled in 37ms
+[00:48:34.514] Server  LOG     ✓ Compiled in 100ms
+[00:48:55.705] Server  LOG     ✓ Compiled in 58ms
+[00:49:38.552] Browser WARN    Failed to fetch districts: {}
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:12.113] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:50:14.017] Browser WARN    Failed to fetch districts: {}
+[00:51:03.230] Server  LOG     ✓ Compiled in 117ms
+[00:51:03.341] Browser ERROR   ./components/AnalyticsDashboard.tsx:1113:78
+Parsing ecmascript source code failed
+  1111 |
+  1112 |                                                     {/* Insights */}
+> 1113 |                                                     {tbaInsights && className="border-2">
+       |                                                                              ^
+  1114 |                                                             (
+  1115 |                                                         <Card <CardHeader className="pb-4">
+  1116 |                                                                 <CardTitle className="text-lg font-black flex items-center gap-2">
+
+Expected '</', got '='
+
+Import traces:
+  Client Component Browser:
+    ./components/AnalyticsDashboard.tsx [Client Component Browser]
+    ./app/analytics/page.tsx [Client Component Browser]
+    ./app/analytics/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/AnalyticsDashboard.tsx [Client Component SSR]
+    ./app/analytics/page.tsx [Client Component SSR]
+    ./app/analytics/page.tsx [Server Component]
+[00:51:03.438] Browser ERROR   ./components/AnalyticsDashboard.tsx:1113:78
+Parsing ecmascript source code failed
+  1111 |
+  1112 |                                                     {/* Insights */}
+> 1113 |                                                     {tbaInsights && className="border-2">
+       |                                                                              ^
+  1114 |                                                             (
+  1115 |                                                         <Card <CardHeader className="pb-4">
+  1116 |                                                                 <CardTitle className="text-lg font-black flex items-center gap-2">
+
+Expected '</', got '='
+
+Import traces:
+  Client Component Browser:
+    ./components/AnalyticsDashboard.tsx [Client Component Browser]
+    ./app/analytics/page.tsx [Client Component Browser]
+    ./app/analytics/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/AnalyticsDashboard.tsx [Client Component SSR]
+    ./app/analytics/page.tsx [Client Component SSR]
+    ./app/analytics/page.tsx [Server Component]
+[00:51:34.947] Browser WARN    Failed to fetch districts: {}
+[00:51:42.609] Server  LOG     ✓ Compiled in 50ms
+[00:51:50.669] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.670] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:58.791] Browser WARN    Failed to fetch districts: {}
+[00:52:02.506] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaRankings.length')
+[00:52:12.794] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:13:26.695Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:52:12.794] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:03:32.517] Browser WARN    Failed to fetch districts: {}
+[01:03:37.544] Browser WARN    Failed to fetch districts: {}
+[01:03:39.478] Browser ERROR   uncaughtError: TypeError: opr.toFixed is not a function. (In 'opr.toFixed(2)', 'opr.toFixed' is undefined)
+[01:08:37.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:37.941] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:29:51.984Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:08:38.264] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:08:47.914] Browser WARN    No TBA status/oprs for this event
+[01:08:47.915] Browser WARN    No TBA status/oprs for this event
+[01:16:15.572] Server  LOG     ✓ Compiled in 42ms
+[01:16:15.572] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:16:16.146] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:37:30.064Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:16:16.146] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:16:25.269] Server  LOG     ✓ Compiled in 33ms
+[01:16:37.450] Server  LOG     ✓ Compiled in 31ms
+[01:17:48.772] Browser WARN    Failed to fetch districts: {}
+[01:17:51.025] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaRankings.length')
+[01:18:02.454] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:39:16.367Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:18:02.454] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:18:11.341] Browser WARN    Failed to fetch districts: {}
+[01:18:13.702] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'Object.keys(tbaOprs)')
+[01:18:24.975] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:39:38.869Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:18:24.975] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:18:29.475] Browser WARN    Failed to fetch districts: {}
+[01:18:49.686] Browser WARN    Failed to fetch districts: {}
+[01:18:58.450] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `AnalyticsDashboard`. 
+[01:19:39.992] Browser ERROR   Error fetching team profile: {}
+[01:19:40.321] Browser ERROR   Error fetching team profile: {}
+[01:19:45.275] Browser WARN    Failed to fetch districts: {}
+[01:19:46.463] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'Object.keys(tbaOprs)')
+[01:20:49.252] Server  LOG     ✓ Compiled in 33ms
+[01:20:49.253] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:49.781] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:42:03.699Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:20:49.781] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:20:58.687] Server  LOG     ✓ Compiled in 43ms
+[01:21:08.409] Server  LOG     ✓ Compiled in 75ms
+[01:21:16.712] Server  LOG     ✓ Compiled in 45ms
+[01:21:57.207] Browser WARN    Failed to fetch districts: {}
+[01:22:09.317] Browser WARN    Failed to fetch districts: {}
+[01:22:17.518] Browser ERROR   Error fetching team profile: {}
+[01:22:17.518] Browser ERROR   Error fetching team profile: {}
+[01:22:29.200] Browser WARN    Failed to fetch districts: {}
+[01:22:43.878] Browser WARN    Failed to fetch districts: {}
+[01:23:17.724] Browser WARN    Failed to fetch districts: {}
+[01:23:55.428] Server  LOG     ✓ Compiled in 32ms
+[01:24:05.669] Server  LOG     ✓ Compiled in 34ms
+[01:25:07.948] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:46:21.835Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:25:07.948] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:25:11.341] Browser WARN    Failed to fetch districts: {}
+[01:25:38.347] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaRankings.length')
+[01:31:57.982] Server  LOG     ✓ Compiled in 35ms
+[01:31:57.987] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:31:58.527] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:53:12.457Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:31:58.527] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:32:08.208] Server  LOG     ✓ Compiled in 60ms
+[01:33:33.090] Server  LOG     ✓ Compiled in 52ms
+[01:33:50.498] Server  LOG     ✓ Compiled in 49ms
+[01:34:19.274] Server  LOG     ✓ Compiled in 52ms
+[01:34:29.086] Server  LOG     ✓ Compiled in 32ms
+[01:34:29.196] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [rankings, 2026ilpe] [rankings, 2026ilpe, 2026ilpe]
+[01:35:49.541] Browser WARN    Failed to fetch districts: {}
+[01:35:54.620] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaRankings.length')
+[01:37:26.544] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:26.571] Server  LOG     ✓ Compiled in 35ms
+[01:37:27.141] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:58:41.062Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:37:27.141] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:37:48.673] Browser WARN    Failed to fetch districts: {}
+[01:37:50.438] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaAlliances.length')
+[01:37:53.209] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:53.211] Server  LOG     ✓ Compiled in 48ms
+[01:37:53.556] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T01:59:07.582Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:37:53.724] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:37:57.360] Browser WARN    Failed to fetch districts: {}
+[01:38:05.944] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaAlliances.length')
+[01:46:27.238] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T02:07:41.152Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:46:27.238] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:46:31.486] Browser WARN    Failed to fetch districts: {}
+[01:46:33.287] Browser ERROR   uncaughtError: TypeError: null is not an object (evaluating 'tbaAlliances.length')
+[01:46:51.219] Server  LOG     ✓ Compiled in 52ms
+[01:46:51.220] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:46:51.732] Browser WARN    GoTrueClient@sb-rttspvlxzgmdwezttrmz-auth-token:1 (2.95.3) 2026-02-21T02:08:05.663Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[01:46:51.732] Browser WARN    Image with src "/2024 MCR Logo PNG Package/2024 MCR Horizontal Logo Green.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:47:01.910] Server  LOG     ✓ Compiled in 47ms
+[01:47:15.231] Server  LOG     ✓ Compiled in 31ms
+[01:47:22.107] Server  LOG     ✓ Compiled in 31ms
+[01:47:32.041] Server  LOG     ✓ Compiled in 32ms
+[01:47:42.609] Server  LOG     ✓ Compiled in 32ms
+[01:47:49.256] Server  LOG     ✓ Compiled in 36ms
+[01:50:49.452] Browser WARN    Failed to fetch districts: {}
+[01:51:10.580] Browser ERROR   Failed to fetch TBA data: {}
+[01:51:11.586] Browser WARN    Failed to fetch districts: {}
+[01:51:11.586] Browser WARN    Failed to fetch districts: {}
